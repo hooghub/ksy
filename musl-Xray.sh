@@ -17,7 +17,7 @@ DEFAULT_PORT=34469
 DOMAIN="kyn.com"
 
 # 客户端实际连接用的公网 IP（请改成你的真实 IP）
-CONNECT_ADDR="你的公网IP"
+CONNECT_ADDR=$(curl -s ipv4.ip.sb || curl -s ifconfig.me || curl -s ipinfo.io/ip)
 
 # 检查 root
 if [ "$(id -u)" != "0" ]; then
