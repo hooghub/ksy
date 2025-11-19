@@ -11,7 +11,7 @@ CERT_DIR="$CONFIG_DIR/cert"
 XRAY_BIN="/usr/local/bin/xray"
 
 # 默认端口
-DEFAULT_PORT=34469
+DEFAULT_PORT=443
 
 # 证书 / SNI 用的域名
 DOMAIN="kyn.com"
